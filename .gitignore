@@ -22,3 +22,6 @@ yarn-error.log*
 
 # AppSync
 AppSync.js
+
+# hide AWS keys
+src/aws-exports.js
