@@ -56,6 +56,7 @@ class NewEvent extends Component {
         const { event } = this.state;
 
         return (
+          <main>
             <div className="ui container raised very padded segment">
                 <h1 className="ui header">Create an event</h1>
                 <div className="ui form">
@@ -93,10 +94,11 @@ class NewEvent extends Component {
                     <div className="ui buttons">
                         <Link to="/" className="ui button">Cancel</Link>
                         <div className="or"></div>
-                        <button className="ui positive button" onClick={this.handleSave}>Save</button>
+                        <button className="ui black button" onClick={this.handleSave}>Save</button>
                     </div>
                 </div>
             </div>
+          </main>
         );
     }
 

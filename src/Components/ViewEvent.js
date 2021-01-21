@@ -13,12 +13,15 @@ class ViewEvent extends Component {
         const { event, loading } = this.props;
 
         return (
+          <main>
             <div className={`ui container raised very padded segment ${loading ? 'loading' : ''}`}>
                 <Link to="/" className="ui button">Back to events</Link>
                 <div className="ui items">
                     <div className="item">
                         {event && <div className="content">
-                            <div className="header">{event.name}</div>
+                            <h1>
+                              <div className="header">{event.name}</div>
+                            </h1>
                             <div className="extra"><i className="icon calendar"></i>{moment(event.when).format('LL')}</div>
                             <div className="extra"><i className="icon clock"></i>{moment(event.when).format('LT')}</div>
                             <div className="extra"><i className="icon marker"></i>{event.where}</div>
@@ -30,6 +33,7 @@ class ViewEvent extends Component {
                     </div>
                 </div>
             </div>
+          </main>
         );
     }
 

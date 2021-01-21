@@ -1,9 +1,12 @@
 # Introduction
 
-The original code is from https://github.com/aws-samples/aws-mobile-appsync-events-starter-react, as described below in React Setup.
+The original code is from https://github.com/aws-samples/aws-mobile-appsync-events-starter-react, as described below in React Setup. Scroll down to the **Original content** heading to see original README content.
 
 ## Changes I have made
 - After launching a sample schema and create and configure a GraphQL API on AWS, as described in https://docs.aws.amazon.com/appsync/latest/devguide/quickstart-launch-a-sample-schema.html, I updated the `aws-exports.js` with the information needed to authorize and access the deployed AWS back end. However for security reasons, those values should not be posted publicly to GitHub! So the `aws-exports.js` was untracked before pushing to GitHub. You will see an `aws-exports-old.js` file, which is a copy of the original download (without my credentials).  
+- Accessibility improvements (started, not yet complete): added main regions, resolved some contrast issues (some remaining), properly linked labels and form elements (one remaining, the date picker), heading levels adjusted. Also remaining: page title. 
+
+---
 
 ## Original content
 This is a Starter React application for using the Sample app in the AWS AppSync console when building your GraphQL API. The Sample app creates a GraphQL schema and provisions Amazon DynamoDB resources, then connects them appropriately with Resolvers. The application demonstrates GraphQL Mutations, Queries and Subscriptions using AWS AppSync. You can use this for learning purposes or adapt either the application or the GraphQL Schema to meet your needs.

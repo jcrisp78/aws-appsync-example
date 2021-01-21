@@ -47,9 +47,10 @@ class NewComment extends Component {
         return (
             <form className="ui reply form">
                 <div className="field">
-                    <textarea value={comment.content} onChange={this.handleChange} disabled={loading}></textarea>
+                  <label htmlFor="addcomment">Add a comment</label>
+                    <textarea id="addcomment" value={comment.content} onChange={this.handleChange} disabled={loading}></textarea>
                 </div>
-                <button className={`ui blue labeled submit icon button ${loading ? 'loading' : ''}`}
+                <button className={`ui black labeled submit icon button ${loading ? 'loading' : ''}`}
                     disabled={loading} onClick={this.handleSubmit}>
                     <i className="icon edit"></i>
                     Add Comment

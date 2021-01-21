@@ -70,7 +70,7 @@ class AllEvents extends Component {
         const { events } = this.props;
 
         return (
-            <div>
+            <main>
                 <div className="ui clearing basic segment">
                     <h1 className="ui header left floated">All Events</h1>
                     <button className="ui icon left basic button" onClick={this.handleSync} disabled={busy}>
@@ -87,7 +87,7 @@ class AllEvents extends Component {
                     </div>
                     {[].concat(events).sort((a, b) => a.when.localeCompare(b.when)).map(this.renderEvent)}
                 </div>
-            </div>
+            </main>
         );
     }
 
