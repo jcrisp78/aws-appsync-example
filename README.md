@@ -4,7 +4,18 @@ The original code is from https://github.com/aws-samples/aws-mobile-appsync-even
 
 ## Changes I have made
 - After launching a sample schema, and creating/configuring a GraphQL API on AWS, as described in https://docs.aws.amazon.com/appsync/latest/devguide/quickstart-launch-a-sample-schema.html, I updated `aws-exports.js` to authorize access to the deployed AWS back end. Since those values should not be posted publicly to GitHub, the `aws-exports.js` was untracked before pushing to GitHub. You will see an `aws-exports-old.js` file, which is a copy of the original download (without my credentials).  
-- Accessibility improvements (started, not yet complete): added main regions, properly linked labels and form elements, adjusted heading levels, page titles set during componentDidMount. Also resolved contrast issues (compare with original screenshots below; sorry but bye-bye pretty blue, not enough contrast). 
+- Changed confirm message for Delete button to list (meaningful) event Name, rather than a (not-meaningful) ID string.
+
+### Accessibility (A11Y) improvements
+- added main regions
+- properly linked labels and form elements
+- adjusted heading levels
+- set page titles during componentDidMount.
+- resolved contrast issues (compare with original screenshots below; sorry, the original very pretty blue text had to change because it did not provide enough contrast).
+
+### A11Y improvements remaining (TODO): 
+- Date/time picker (on Add Event) could use some help
+- Add should be rendered as a Button (much as Delete is)
 
 ---
 
