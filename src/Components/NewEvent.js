@@ -65,11 +65,11 @@ class NewEvent extends Component {
                         <input type="text" id="name" value={event.name} onChange={this.handleChange.bind(this, 'name')} />
                     </div>
                     <div className="field required eight wide">
-                        <label htmlFor="when">When</label>
+                        <label id="when">When</label>
                         <DatePicker
                             className="ui container"
                             customInput={<DateTimePickerCustomInput />}
-                            id="when"
+                            aria-labeledby="when"
                             selected={moment(event.when)}
                             onChange={this.handleDateChange.bind(this, 'when')}
                             peekNextMonth

@@ -79,7 +79,7 @@ class AllEvents extends Component {
                     </button>
                 </div>
                 <div className="ui link cards">
-                    <div className="card blue">
+                    <div className="card black">
                         <Link to="/newEvent" className="new-event content center aligned">
                             <i className="icon add massive"></i>
                             <p>Create new event</p>
