@@ -22,11 +22,11 @@ class ViewEvent extends Component {
                             <h1>
                               <div className="header">{event.name}</div>
                             </h1>
-                            <div className="extra"><i className="icon calendar"></i>{moment(event.when).format('LL')}</div>
-                            <div className="extra"><i className="icon clock"></i>{moment(event.when).format('LT')}</div>
-                            <div className="extra"><i className="icon marker"></i>{event.where}</div>
+                            <div className="item"><i className="icon calendar"></i>{moment(event.when).format('LL')}</div>
+                            <div className="item"><i className="icon clock"></i>{moment(event.when).format('LT')}</div>
+                            <div className="item"><i className="icon marker"></i>{event.where}</div>
                             <div className="description">{event.description}</div>
-                            <div className="extra">
+                            <div className="item">
                                 <EventComments eventId={event.id} comments={event.comments} />
                             </div>
                         </div>}

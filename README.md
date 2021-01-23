@@ -4,7 +4,7 @@ The original code is from https://github.com/aws-samples/aws-mobile-appsync-even
 
 ## Changes I have made
 - After launching a sample schema and create and configure a GraphQL API on AWS, as described in https://docs.aws.amazon.com/appsync/latest/devguide/quickstart-launch-a-sample-schema.html, I updated the `aws-exports.js` with the information needed to authorize and access the deployed AWS back end. However for security reasons, those values should not be posted publicly to GitHub! So the `aws-exports.js` was untracked before pushing to GitHub. You will see an `aws-exports-old.js` file, which is a copy of the original download (without my credentials).  
-- Accessibility improvements (started, not yet complete): added main regions, resolved some contrast issues (some remaining), properly linked labels and form elements (one remaining, the date picker), heading levels adjusted. Also remaining: page title. 
+- Accessibility improvements (started, not yet complete): added main regions, properly linked labels and form elements, adjusted heading levels. Also resolved contrast issues (compare with original screenshots below; sorry but bye-bye pretty blue, not enough contrast). Remaining: page title. 
 
 ---
 

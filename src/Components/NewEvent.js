@@ -69,7 +69,7 @@ class NewEvent extends Component {
                         <DatePicker
                             className="ui container"
                             customInput={<DateTimePickerCustomInput />}
-                            aria-labeledby="when"
+                            aria-labelledby="when"
                             selected={moment(event.when)}
                             onChange={this.handleDateChange.bind(this, 'when')}
                             peekNextMonth
