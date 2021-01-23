@@ -28,6 +28,10 @@ class NewEvent extends Component {
         }
     };
 
+    componentDidMount() {
+      document.title = 'Add Event';
+    }
+
     handleChange(field, { target: { value } }) {
         const { event } = this.state;
 

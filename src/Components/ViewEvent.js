@@ -9,6 +9,10 @@ import EventComments from "./EventComments";
 
 class ViewEvent extends Component {
 
+  componentDidMount() {
+    document.title = 'View Event';
+  }
+
     render() {
         const { event, loading } = this.props;
 

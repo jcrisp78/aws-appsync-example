@@ -18,10 +18,14 @@ class AllEvents extends Component {
         deleteEvent: () => null,
     }
 
+    componentDidMount() {
+      document.title = 'All Events';
+    }
+
     async handleDeleteClick(event, e) {
         e.preventDefault();
 
-        if (window.confirm(`Are you sure you want to delete event ${event.id}`)) {
+        if (window.confirm(`Are you sure you want to delete the event named: ${event.name}`)) {
             const { deleteEvent } = this.props;
 
             await deleteEvent(event);
